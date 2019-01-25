@@ -1,0 +1,46 @@
+need:
+    nav bar
+    logo/banner
+    about us
+    prices
+    portfolio
+    contact
+
+
+navbar:
+    contains links to each section of page   
+    hidden while at top of screen
+    when scrolling down:
+        logo animates towards the brand loc on the nav bar as the nav bar slides into view
+
+logo/Banner:
+    takes up the whole page
+    animates to nav bar on scroll
+
+prices:
+    basic pack (needs to be priced)
+    contains an estimate on pricing for add ons:
+        CMS
+        SEO
+        Shop
+        Users
+
+portfolio:
+    Shows off previous projects(links to the sites if they are up)
+    contains hidden 'labels' for projects with more info:
+        what was involved in the project.
+        short write up about the project.
+
+contact:
+    email
+    phone
+
+about us:
+    a short write up on designaffix
+
+general:
+    minimalist design
+    greyscale colour pallette with orange and blue
+    clean, readable typography on a minor third scale
+
+

@@ -1,0 +1,112 @@
+.container{
+    display:grid;
+    grid-template-columns: 5% 90vw 5%;
+    grid-template-rows: 5% repeat(5,auto) 5%;
+    justify-content: center;
+    text-align: center;
+}
+.banner{
+    grid-row:2;
+    grid-column:2;
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows: 5% auto auto auto 5%;
+}
+
+.logo{
+    grid-column:1;
+    grid-row:2;
+    max-width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* add a media width to mediaQ */
+.tagline{
+    grid-column:1;
+    grid-row:3;
+    width:70vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.arrow{
+    grid-column:1;
+    grid-row:4;
+}
+
+.about {
+    grid-row:3;
+    grid-column:2;
+}
+
+.price {
+    grid-row:4;
+    grid-column:2;
+}
+
+.portfolio {
+    grid-row:5;
+    grid-column:2;
+}
+
+.contact {
+    grid-row:6;
+    grid-column:2;
+}
+
+.paragraph {
+    text-align: left;
+}
+
+.portfolioPanel {
+    display:grid;
+    grid-template-columns:  100%;
+    grid-template-rows: repeat(3, auto);
+    width:32%;
+}
+.portfolioImage {
+    grid-row: 2;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 20vw;
+}
+.title{
+    grid-row: 1;
+}
+
+.portfolioDescription{
+    grid-row: 3;
+}
+
+.portfolioContainer {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.textBox {
+    max-width: 1200px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .portfolioPanel {
+      width: 49%;
+    }
+
+    .portfolioImage {
+        max-height: 30vw;
+    }
+  }
+  @media only screen and (max-width: 670px) {
+    .portfolioPanel {
+      width: 100%;
+    }
+
+    .portfolioImage {
+        max-height: 25vw;
+    }
+  }
