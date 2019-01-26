@@ -1,13 +1,30 @@
+/*  ---------------
+fonts 
+
+font-family: 'Lobster', cursive;
+font-family: 'Cabin', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+colours
+
+dark - #212121
+orange - #FB7800
+light - #ffffff
+dark grey - #252525;
+dark2 - #202020
+
+--------------------- */
+
 .container{
     display:grid;
     grid-template-columns: 5% 90vw 5%;
-    grid-template-rows: 5% repeat(5,auto) 5%;
+    grid-template-rows: 2% repeat(5,auto) 5%;
     justify-content: center;
     text-align: center;
 }
 .banner{
     grid-row:2;
-    grid-column:2;
+    grid-column-start:span 2;
     display:grid;
     grid-template-columns:auto;
     grid-template-rows: 5% auto auto auto 5%;
@@ -21,7 +38,6 @@
     margin-right: auto;
 }
 
-/* add a media width to mediaQ */
 .tagline{
     grid-column:1;
     grid-row:3;
@@ -33,6 +49,8 @@
 .arrow{
     grid-column:1;
     grid-row:4;
+    display: flex;
+    justify-content: space-around;
 }
 
 .about {
@@ -57,7 +75,10 @@
 
 .paragraph {
     text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
 }
+
 
 .portfolioPanel {
     display:grid;
@@ -90,6 +111,48 @@
     max-width: 1200px;
     margin-right:auto;
     margin-left:auto;
+}
+
+a:hover{
+    text-decoration:underline;
+    font-size: 1.02em;
+    color: #FB7800;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    padding:0.3em;
+}
+
+h2 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 2.756rem;
+}
+
+
+footer{
+    grid-row:6;
+    grid-column-start:1;
+    padding:5%;
+    padding-top:1%;
+    background-color:#252525;
+}
+
+.email,.mobile, .title{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.8em;
+}
+
+.email,.mobile{
+    padding:1em;
+}
+footer a, footer h2{
+    color:white;
+}
+
+li{
+    list-style: none;
 }
 
 @media only screen and (max-width: 1200px) {

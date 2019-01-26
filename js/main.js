@@ -5,9 +5,9 @@ Vue.component('banner', {
         <div class="tagline">    
             <h2>Show your good side at all times<br>Responsive website designed to connect your brand to your customers.</h2>
         </div>
-        <div class="arrow">
+        <!--<div class="arrow">
             <img alt="arrow down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADTSURBVGhD7dK9DcIwGIRhd9AAE7AYJQMwAKOwCx1bIBoalkDAOeSkFAhbjn8+S/dIp8TuXslORERERCTFElt8f03ajN+gO3bFtsPJlj32xI7DKeCMvbEbZinGR7zG7fxFyBq7YJZiphEHfxHLUkxyBFmImR1BLWOyRVCLmOwRVDOmWATViCkeQSVjqkVQiZjqEZQzplkE5YhpHkFzYsxEUEqMuQhaYbExZiMoJsZ8BP2L6SaCfsV0F0HTmAfWZQRNY7qNIB9zwvzTEhERERGRDJz7ALs1cajR0ID6AAAAAElFTkSuQmCC">
-        </div>
+        </div>-->
     </div>
     `,
 })
@@ -116,11 +116,11 @@ Vue.component('contact', {
         <h2>Contact Us</h2>
 
         <div class="email">
-        <p class="email twelve columns links"><a class="e-l footer-links" href="#" data-ep1="jack" data-ep2="designaffix.co" data-ep3="uk">xxxx@xxxxxxx.xx.xxx</a></p>
+            <a class="e-l" href="#" data-ep1="jack" data-ep2="designaffix.co" data-ep3="uk"><p class="email">xxxx@xxxxxxxxxxx.xx.xx</p></a>
         </div>           
 
         <div class="mobile">
-            <p class="twelve columns mobile links"><a class="e-l2 footer-links" href="#" data-p1="07548" data-p2="855" data-p3="583">xxxxxxxxx</a></p>
+            <a class="e-l2" href="#" data-p1="07548" data-p2="855" data-p3="583"><p class="mobile">xxxxxxxxx</p></a>
         </div>
     </footer>
     `,
@@ -129,6 +129,7 @@ Vue.component('contact', {
 var app = new Vue({
     template: `
     <div class="container">
+    
         <banner></banner>
 
         <about-us></about-us>
@@ -136,9 +137,10 @@ var app = new Vue({
         <pricing></pricing>
 
         <portfolio></portfolio>
-
+        
         <contact></contact>
-    </div>
+        
+    </div>    
     `,
     el: '#app',
     data: {
