@@ -110,6 +110,38 @@ footer{
     padding:5%;
 }
 
+nav{
+    display:flex;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 100vw;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    background:#ffffff;
+    z-index: 5;
+}
+.navBox{
+    width:25vw;
+}
+.navLink{
+    padding:2vh 2vw;
+    font-size: 1.5rem;
+}
+.navLink:hover{
+    font-size: 1.6rem;
+}
+svg{
+    padding:1vh 2vw;
+}
+
+.test{
+    margin-left:auto;
+    margin-right:auto;
+}
                 /* styling */
 a:hover{
     text-decoration:underline;
@@ -124,7 +156,7 @@ a {
     padding:0.3em;
 }
 
-h2 {
+h2, .navItem {
     font-family: 'Cabin', sans-serif;
     font-size: 2.2em;
 }
@@ -185,7 +217,8 @@ ul{
     filter: blur(1.5px);
 }
 
-@media only screen and (max-width: 1200px) {
+
+  @media only screen and (max-width: 1200px) {
     .portfolioPanel {
       width: 49%;
     }
@@ -194,12 +227,28 @@ ul{
         max-height: 30vw;
     }
   }
-  @media only screen and (max-width: 670px) {
+  @media only screen and (max-width: 750px) {
     .portfolioPanel {
       width: 100%;
     }
 
     .portfolioImage {
         max-height: 25vw;
+    }
+
+    .hideWhenSmall{
+        visibility: hidden;
+        overflow: hidden;
+    }
+    .hideWhenBig{
+        visibility: visible;
+    }
+  }
+  @media only screen and (min-width: 750px) {
+    .hideWhenBig{
+        visibility: visible;
+    }
+    .hideWhenBig{
+        visibility: hidden;
     }
   }

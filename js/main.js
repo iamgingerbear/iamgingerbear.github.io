@@ -14,7 +14,7 @@ Vue.component('banner', {
 
 Vue.component('about-us', {
     template: `
-    <div class="about parallax">
+    <div class="about parallax" id="about">
         <h2>About us</h2>
         <div class="textBox">
             <p class="paragraph" >Designaffix is a Narberth based startup web development company with a focus on user experience and accessibility. We aim to provide intuative websites that allow customers to connect with brands and create a website that anyone can enjoy.</p>
@@ -26,7 +26,7 @@ Vue.component('about-us', {
 
 Vue.component('pricing', {
     template: `
-    <div class="price">
+    <div class="price" id="price">
         <div class="basicPackage">
             <h2>Prices start from £250</h2>
             <div class="textBox">
@@ -65,7 +65,7 @@ Vue.component('pricing', {
 
 Vue.component('portfolio', {
     template: `
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolioContainer">
             <div v-for="project in projects"
@@ -112,7 +112,7 @@ Vue.component('portfolio', {
 
 Vue.component('contact', {
     template: `
-    <footer class="contact parallax">
+    <footer class="contact parallax" id="contact">
         <h2>Contact Us</h2>
 
         <div class="email">
@@ -126,22 +126,59 @@ Vue.component('contact', {
     `,
 })
 
-Vue.component('parallax', {
+Vue.component('navBar', {
     template: `
-    <div class="section">
-        <div class="background">
-            <!-- <img src="../img/code.png"> -->
-        </div>
-        <about-us></about-us>
+    <div class="test">
+        <nav class="nav hideWhenSmall">
+            <div v-for="link in links" class="navBox">
+                <p class="navItem "><a :href="link.href" class="navLink">{{link.name}}</a></p>
+            </div>
+            
+        </nav>
+        <nav class="nav hideWhenBig">
+            <div v-for="link in links" class="navBox">
+                <a :href="link.href" class="navLink"><i :class="link.img"></i></a>
+            </div>
+        </nav>
     </div>
     `,
+    data: function(){
+        return {
+            links: {
+                about: {
+                    href: "#about",
+                    name: "About",
+                    img: "fas fa-home navItem",
+                },
+                price: {
+                    href: "#pricing",
+                    name: "Price",
+                    img:"fas fa-pound-sign navItem",
+                },
+                portfolio: {
+                    href: "#portfolio",
+                    name: "Portfolio",
+                    img:"fas fa-briefcase navItem",
+                },
+                contact: {
+                    href: "#contact",
+                    name: "Contact",
+                    img:"fas fa-address-book navItem",
+                },
+            }
+        }
+    }
 })
 
 var app = new Vue({
     template: `
     <div class="container">
-    
+
+        
+
         <banner></banner>
+
+        <navBar></navBar>
 
         <about-us></about-us>
 
