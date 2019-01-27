@@ -28,7 +28,6 @@ body{
     text-align: center;
 }
 .banner{
-    padding:2em;
     padding-top:10vh;
 }
 
@@ -46,18 +45,15 @@ body{
     padding-bottom:2em;
 }
 
-
 .arrowDown{
     text-align: center;
 }
 
-/* .about {
-
-} */
-
-/* .price {
-
-} */
+.about, .price, .banner {
+    max-width:100vw;
+    padding-left:0;
+    padding-right:0;
+}
 
 .portfolio {
     max-width: 100vw;
