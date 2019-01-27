@@ -14,7 +14,7 @@ Vue.component('banner', {
 
 Vue.component('about-us', {
     template: `
-    <div class="about">
+    <div class="about parallax">
         <h2>About us</h2>
         <div class="textBox">
             <p class="paragraph" >Designaffix is a Narberth based startup web development company with a focus on user experience and accessibility. We aim to provide intuative websites that allow customers to connect with brands and create a website that anyone can enjoy.</p>
@@ -37,7 +37,7 @@ Vue.component('pricing', {
                 <p class="paragraph">On contact, we will be happy to answer any questions, as well as help work out the requirements for the job. I will not charge for a quote.<br>Expect a reponse within 24 hours.</p>
             </div>
         </div>
-        <div class="addOn">
+        <div class="addOn parallax">
             <h2>Add-Ons</h2>
             <div class="textBox">
                 <p class="paragraph" v-for="addon in addOns">{{addon}}</p>
@@ -112,7 +112,7 @@ Vue.component('portfolio', {
 
 Vue.component('contact', {
     template: `
-    <footer class="contact">
+    <footer class="contact parallax">
         <h2>Contact Us</h2>
 
         <div class="email">
@@ -123,6 +123,17 @@ Vue.component('contact', {
             <a class="e-l2" href="#" data-p1="07548" data-p2="855" data-p3="583"><p class="mobile">xxxxxxxxx</p></a>
         </div>
     </footer>
+    `,
+})
+
+Vue.component('parallax', {
+    template: `
+    <div class="section">
+        <div class="background">
+            <!-- <img src="../img/code.png"> -->
+        </div>
+        <about-us></about-us>
+    </div>
     `,
 })
 
@@ -139,7 +150,6 @@ var app = new Vue({
         <portfolio></portfolio>
         
         <contact></contact>
-        
     </div>    
     `,
     el: '#app',
