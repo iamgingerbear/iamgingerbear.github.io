@@ -1,0 +1,176 @@
+/*  ---------------
+fonts 
+
+font-family: 'Lobster', cursive;
+font-family: 'Cabin', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+colours
+
+dark - #212121
+orange - #FB7800
+light - #ffffff
+dark grey - #252525;
+dark2 - #202020
+
+--------------------- */
+
+                    /* layout */
+body{
+    margin:0;
+    padding:0;
+    max-width: 100vw;
+}
+
+.container{
+    display:grid;
+    justify-content: center;
+    text-align: center;
+}
+.banner{
+    padding-top:10vh;
+}
+
+.logo{
+    max-width:95vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:2em;
+}
+
+.tagline{
+    width:70vw;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:2em;
+}
+
+
+.arrowDown{
+    text-align: center;
+}
+
+/* .about {
+
+} */
+
+/* .price {
+
+} */
+
+.portfolio {
+    max-width: 100vw;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+/* .contact {
+
+} */
+
+.portfolioPanel {
+    display:grid;
+    grid-template-columns:  100%;
+    grid-template-rows: repeat(3, auto);
+    width:32%;
+}
+.portfolioImage {
+    grid-row: 2;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 20vw;
+}
+.title{
+    grid-row: 1;
+}
+
+.portfolioDescription{
+    grid-row: 3;
+}
+
+.portfolioContainer {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.textBox {
+    max-width: 1200px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+footer{
+    grid-row:6;
+    grid-column-start:1;
+    padding:5%;
+    padding-top:1%;
+    background-color:#252525;
+}
+
+                /* styling */
+a:hover{
+    text-decoration:underline;
+    font-size: 1.02em;
+    color: #FB7800;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    padding:0.3em;
+}
+
+h2 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 2.756em;
+}
+
+.paragraph {
+    text-align: left;
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em 1.5em;
+    margin:0;
+}
+
+.email,.mobile, .title{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.8em;
+}
+
+.email,.mobile{
+    padding:1em;
+}
+footer a, footer h2{
+    color:white;
+}
+
+li.paragraph{
+    list-style: none;
+    padding-bottom:.25em;
+    padding-top:.25em;
+}
+
+ul{
+    margin:0;
+}
+@media only screen and (max-width: 1200px) {
+    .portfolioPanel {
+      width: 49%;
+    }
+
+    .portfolioImage {
+        max-height: 30vw;
+    }
+  }
+  @media only screen and (max-width: 670px) {
+    .portfolioPanel {
+      width: 100%;
+    }
+
+    .portfolioImage {
+        max-height: 25vw;
+    }
+  }
