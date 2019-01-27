@@ -227,6 +227,7 @@ ul{
 }
 .hideWhenSmall, .hideWhenBig{
     max-height: 10vh;
+    margin: 0;
 }
 
   @media only screen and (max-width: 1200px) {
