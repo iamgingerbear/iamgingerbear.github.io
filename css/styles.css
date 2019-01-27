@@ -126,10 +126,13 @@ nav{
 }
 .navBox{
     width:25vw;
+    max-height: 10vh;
+    align-content: flex-start;
 }
 .navLink{
-    padding:2vh 2vw;
+    padding:1vh 2vw;
     font-size: 1.5rem;
+    padding:0;
 }
 .navLink:hover{
     font-size: 1.6rem;
@@ -149,7 +152,9 @@ a:hover{
     color: #FB7800;
     transition: all .3s;
 }
-
+.navItem{
+    margin:0;
+}
 a {
     text-decoration: none;
     color:black;
@@ -216,7 +221,9 @@ ul{
     opacity:.95;
     filter: blur(1.5px);
 }
-
+.hideWhenSmall, .hideWhenBig{
+    max-height: 10vh;
+}
 
   @media only screen and (max-width: 1200px) {
     .portfolioPanel {
