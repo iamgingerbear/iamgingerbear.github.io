@@ -2,7 +2,7 @@ Vue.component('banner', {
     template: `
     <div class="banner">
         <img class="logo" src="img/designaffix-logo-no-background.png" alt="Designaffix logo"></img>
-        <div class="tagline">    
+        <div class="tagline" id="test">    
             <h2>Show your good side at all times<br>Responsive website designed to connect your brand to your customers.</h2>
         </div>
         <div class="arrow">
@@ -128,19 +128,21 @@ Vue.component('contact', {
 
 Vue.component('navBar', {
     template: `
-    <div class="test">
-        <nav class="nav hideWhenSmall">
+    <nav class="nav">
+
+        <div class=" hideWhenSmall">
             <div v-for="link in links" class="navBox">
                 <p class="navItem "><a :href="link.href" class="navLink">{{link.name}}</a></p>
             </div>
-            
-        </nav>
-        <nav class="nav hideWhenBig">
+        </div>
+
+        <div class="hideWhenBig">
             <div v-for="link in links" class="navBox">
                 <a :href="link.href" class="navLink"><i :class="link.img"></i></a>
             </div>
-        </nav>
-    </div>
+        </div>
+
+    </nav>
     `,
     data: function(){
         return {
@@ -174,11 +176,9 @@ var app = new Vue({
     template: `
     <div class="container">
 
-        
+        <navBar></navBar>
 
         <banner></banner>
-
-        <navBar></navBar>
 
         <about-us></about-us>
 
@@ -187,6 +187,7 @@ var app = new Vue({
         <portfolio></portfolio>
         
         <contact></contact>
+
     </div>    
     `,
     el: '#app',

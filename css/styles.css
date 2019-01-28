@@ -48,21 +48,32 @@ body{
 .arrowDown{
     text-align: center;
 }
-
+.arrow{
+    max-width: 100vw;
+}
 .about, .price, .banner, .addOn {
     padding-left:0;
     padding-right:0;
+    margin: 0;
+    max-width: 100vw;
 }
 
 .about, .addOn, .contact {
     padding-top:2vh;
     padding-bottom:6vh;
 }
+footer, .contact{
+    margin: 0;
+    max-width: 100vw;
+    padding: 0 0 10vh 0;
+}
 
 .portfolio {
     max-width: 100vw;
     margin-right:auto;
     margin-left:auto;
+    margin:0;
+    padding-bottom: 4vh; 
 }
 
 .portfolioPanel {
@@ -108,42 +119,39 @@ footer{
     grid-column-start:1;
     padding:5%;
 }
+                /* nav */
 
 nav{
-    display:flex;
-    position:fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin:auto;
-    width: 100vw;
-    justify-content: space-between;
-    text-align: center;
-    align-content: center;
-    background:#ffffff;
+    max-width: 100vw;
+    opacity: 1;
     z-index: 5;
 }
-.navBox{
-    width:25vw;
-    max-height: 10vh;
-    align-content: flex-start;
-}
-.navLink{
-    padding:1vh 2vw;
-    font-size: 1.5rem;
-    padding:0;
-}
-.navLink:hover{
-    font-size: 1.6rem;
-}
-svg{
-    padding:1vh 2vw;
+
+.hideWhenSmall, .hideWhenBig{
+    display: flex;
+    position: fixed;
+    bottom:0;
+    left:0;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
-.test{
-    margin-left:auto;
-    margin-right:auto;
+.hideWhenSmall > div, .hideWhenBig > div{
+    flex: 1;
+    flex-basis: 25vw;
 }
+.navBox, .navItem{
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+.navItem{
+    margin: 0;
+    padding:2vh 2vw;
+}
+.nav p, .nav a, .nav i, svg{
+    opacity: 1;
+}
+        
                 /* styling */
 a:hover{
     text-decoration:underline;
@@ -151,13 +159,7 @@ a:hover{
     color: #FB7800;
     transition: all .3s;
 }
-.navItem{
-    margin:0;
-}
 
-.nav a{
-    padding: 2em 1em;
-}
 a {
     text-decoration: none;
     color:black;
@@ -171,10 +173,11 @@ h2, .navItem {
 
 .paragraph {
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: 'Raleway', sans-serif;
-    padding: 1em 1.5em;
+    padding: 1vh 5vw;
     margin:0;
+    box-sizing: border-box;
 }
 
 .email,.mobile, .title{
@@ -183,7 +186,7 @@ h2, .navItem {
 }
 
 .email,.mobile{
-    padding:1em;
+    padding:.5em;
 }
 footer a, footer h2{
     color:white;
@@ -224,29 +227,29 @@ ul{
     opacity:.95;
     filter: blur(1.5px);
 }
-.hideWhenSmall, .hideWhenBig{
-    max-height: 10vh;
-    margin: 0;
-}
 
-  @media only screen and (max-width: 1200px) {
+
+@media only screen and (max-width: 1200px) {
     .portfolioPanel {
-      width: 49%;
+        width: 49%;
     }
 
     .portfolioImage {
         max-height: 30vw;
     }
-  }
-  @media only screen and (max-width: 750px) {
+}
+
+@media only screen and (max-width: 750px) {
     .portfolioPanel {
-      width: 100%;
+        width: 100%;
     }
 
     .portfolioImage {
         max-height: 25vw;
     }
-
+    .arrow{
+        margin: 0;
+    }
     .hideWhenSmall{
         visibility: hidden;
         overflow: hidden;
@@ -254,9 +257,9 @@ ul{
     .hideWhenBig{
         visibility: visible;
     }
-  }
-  @media only screen and (min-width: 750px) {
-    .nav{
+}
+@media only screen and (min-width: 750px) {
+    .hideWhenSmall, .hideWhenBig{
         top: 0;
         bottom:95vh;
     }
