@@ -26,7 +26,7 @@ Vue.component('about-us', {
 
 Vue.component('pricing', {
     template: `
-    <div class="price" id="price">
+    <div class="price" id="pricing">
         <div class="basicPackage">
             <h2>Prices start from £250</h2>
             <div class="textBox">
