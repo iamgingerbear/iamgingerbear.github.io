@@ -5,9 +5,7 @@ Vue.component('banner', {
         <div class="tagline" id="test">    
             <h2>Show your good side at all times<br>Responsive website designed to connect your brand to your customers.</h2>
         </div>
-        <div class="arrow">
-            <img class="arrowDown" alt="arrow down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADTSURBVGhD7dK9DcIwGIRhd9AAE7AYJQMwAKOwCx1bIBoalkDAOeSkFAhbjn8+S/dIp8TuXslORERERCTFElt8f03ajN+gO3bFtsPJlj32xI7DKeCMvbEbZinGR7zG7fxFyBq7YJZiphEHfxHLUkxyBFmImR1BLWOyRVCLmOwRVDOmWATViCkeQSVjqkVQiZjqEZQzplkE5YhpHkFzYsxEUEqMuQhaYbExZiMoJsZ8BP2L6SaCfsV0F0HTmAfWZQRNY7qNIB9zwvzTEhERERGRDJz7ALs1cajR0ID6AAAAAElFTkSuQmCC">
-        </div>
+        
     </div>
     `,
 })
