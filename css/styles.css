@@ -196,6 +196,9 @@ h2 {
     padding:.5rem;
     margin-bottom: 3vh;
 }
+.email, .contactTitle{
+    margin-top:5vh;
+}
 footer a, footer h2{
     color:white;
 }

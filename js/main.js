@@ -111,7 +111,7 @@ Vue.component('portfolio', {
 Vue.component('contact', {
     template: `
     <footer class="contact parallax" id="contact">
-        <h2>Contact Us</h2>
+        <h2 class="contactTitle">Contact Us</h2>
 
         <div class="email">
             <a class="e-l" href="#" data-ep1="jack" data-ep2="designaffix.co" data-ep3="uk"><p class="email">xxxx@xxxxxxxxxxx.xx.xx</p></a>
