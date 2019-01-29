@@ -94,7 +94,7 @@ footer, .contact{
 .portfolioImage:hover{
     transition: all .3s;
     opacity: .85;
-    size: 1.1rem;
+    size: 1.1em;
 }
 .title{
     grid-row: 1;
@@ -162,7 +162,7 @@ nav{
                 /* styling */
 a:hover{
     text-decoration:underline;
-    font-size: 1.02rem;
+    font-size: 1.02em;
     color: #FB7800;
     transition: all .3s;
 }
