@@ -44,3 +44,9 @@ general:
     clean, readable typography on a minor third scale
 
 
+
+
+shade nav?
+anims for hover/click
+check content for consitency and re-write where needed
+adjust the nav locations to account for the nav bar

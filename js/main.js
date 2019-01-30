@@ -175,17 +175,17 @@ var app = new Vue({
     <div class="container">
 
         <navBar></navBar>
+        <div class="scroll">
+            <banner></banner>
 
-        <banner></banner>
+            <about-us></about-us>
 
-        <about-us></about-us>
+            <pricing></pricing>
 
-        <pricing></pricing>
-
-        <portfolio></portfolio>
-        
-        <contact></contact>
-
+            <portfolio></portfolio>
+            
+            <contact></contact>
+        </div>
     </div>    
     `,
     el: '#app',

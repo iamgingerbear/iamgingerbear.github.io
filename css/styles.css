@@ -77,12 +77,15 @@ footer, .contact{
     margin:0;
     padding-bottom: 4vh; 
 }
-
+.portfolio h2{
+    padding-top:5vh;
+}
 .portfolioPanel {
     display:grid;
     grid-template-columns:  100%;
     grid-template-rows: repeat(3, auto);
     width:32%;
+    padding-bottom: 2vh;
 }
 .portfolioImage {
     grid-row: 2;
@@ -185,6 +188,7 @@ h2 {
     padding: 1vh 5vw;
     margin:0;
     box-sizing: border-box;
+    font-weight: 500;
 }
 
 .email,.mobile, .title{
@@ -196,8 +200,11 @@ h2 {
     padding:.5rem;
     margin-bottom: 3vh;
 }
-.email, .contactTitle{
-    margin-top:5vh;
+.email{
+    padding-top:5vh;
+}
+.contactTitle{
+    padding-top: 10vh;
 }
 footer a, footer h2{
     color:white;
@@ -241,6 +248,9 @@ ul{
 
 h3 {
     margin:0;
+}
+#pricing h2{
+    padding-top:5vh;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -286,5 +296,10 @@ h3 {
     }
     .hideWhenBig{
         visibility: hidden;
+    }
+    .scroll{
+        max-height:95vh;
+        margin-top:5vh;
+        overflow-y: scroll;
     }
   }
