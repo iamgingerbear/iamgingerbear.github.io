@@ -89,20 +89,6 @@ Vue.component('portfolio', {
                     title:"MN Tax Accountants.com",
                     desc: "I was asked to refresh the homepage. Modernising it by creating a responsive website, a colour scheme that suited the brand, easily readable text and easily navigatable.",
                 },
-                stuff:{
-                    image: "https://ahotaku39.files.wordpress.com/2012/11/cmpfullscreen-capture-1142012-12809-pm.jpg",
-                    alt: "something else",
-                    site: "#",
-                    title:"FirstBlog.com",
-                    desc: "I was tasked with creating a fresh and easy to use blogging site for a small business. Blah, blah, etc.",
-                },
-                things:{
-                    image: "https://i.imgur.com/waxS1XS.jpg",
-                    alt: "a logo",
-                    site: "#",
-                    title:"Something.com",
-                    desc: "blah, blah, blah. Something about how it was a fun project or w/e",
-                }, 
             }
         }
     },
