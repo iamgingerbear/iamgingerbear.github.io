@@ -115,10 +115,6 @@ Vue.component('contact', {
 
         <div class="email">
             <a class="e-l" href="#" data-ep1="jack" data-ep2="designaffix.co" data-ep3="uk"><p class="email">xxxx@xxxxxxxxxxx.xx.xx</p></a>
-        </div>           
-
-        <div class="mobile">
-            <a class="e-l2" href="#" data-p1="07548" data-p2="855" data-p3="583"><p class="mobile">xxxxxxxxx</p></a>
         </div>
     </footer>
     `,
